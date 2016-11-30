@@ -33,11 +33,19 @@
   left: 5%;
   top: 65%;
   z-index: 1000;
+  transform: scale(1.4);
 }
 #legend-close-btn{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 4px 0 0;
+  border: none;
+  text-align: center;
+}
+/*#legend-close-btn{
   display: none;
   position: absolute;
   left: 6%;
   top: 48%;
   z-index: 1000;
-}
+}*/

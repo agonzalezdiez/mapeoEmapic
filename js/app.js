@@ -1,13 +1,31 @@
 $( document ).ready(function() {
 
-    d3.queue()
-        .defer(d3.json,"data/prueba_apoyos.json")
-        .defer(d3.json,"data/prueba_apoyos_2.json")
-        .await(ready);
+    var mobile = false;
+    var mymap;
+    var legend;
+    var drawn = false;
+
+    function readData(){
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            mobile = true;
+        }
+        else{
+           mobile = false;
+        }
+
+        d3.queue()
+            .defer(d3.json,"data/prueba_apoyos.json")
+            .defer(d3.json,"data/madridDistritos.json")
+            .await(ready);
+    }
 
     function ready(error,data,data2){
 
         console.log("DATA",data,error,data2);
+        if(!mymap){
+            mymap = L.map('mapid');
+        }
 
         var formatNumber = function(numero){
                   var es_ES = {
@@ -29,7 +47,6 @@ $( document ).ready(function() {
                 return formato(numero).replace(',0','');
             };
 
-        	var mymap = L.map('mapid');
 
                 var max_barrios = -1;
         	var min_barrios = 1000000;
@@ -44,7 +61,9 @@ $( document ).ready(function() {
                 var max_distritos = -1;
         	var min_distritos = 1000000;
         	data2.features.forEach(function(d){
-            var valor = (d.properties.apoyos / d.properties.poblacion)*100;
+                    var apoyos = Math.floor(Math.random() * d.properties.poblacion);
+                    d.properties.apoyos = apoyos;
+                    var valor = (d.properties.apoyos / d.properties.poblacion)*100;
         		d.properties.valor = valor.toFixed(2);
         		// si se cumple la cumple la condición el valor es el max o el min
         		if(valor>max_distritos){max_distritos = valor;}
@@ -85,41 +104,37 @@ $( document ).ready(function() {
         var geojsonLayer_barrios = new L.GeoJSON(data, { style: style_barrios });
         
         geojsonLayer_barrios.addTo(mymap).bindPopup(function(d){ 
+        //geojsonLayer_barrios.bindPopup(function(d){ 
             return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.nombre + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
         });
 
         var geojsonLayer_distritos = new L.GeoJSON(data2, { style: style_distritos });
         
-        geojsonLayer_distritos.addTo(mymap).bindPopup(function(d){ 
-            return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.nombre + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
+        geojsonLayer_distritos.bindPopup(function(d){ 
+        //geojsonLayer_distritos.addTo(mymap).bindPopup(function(d){ 
+            return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.name + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
         });
 
         var bounds = geojsonLayer_distritos.getBounds();
         console.log(bounds);
         mymap.fitBounds(bounds);
-        var legend ;
         var grades;
-        var mobile = false;
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var close_text = " ";
+        if(mobile){
             grades = [0,30,60,100];
             legend= L.control({position: 'bottomleft'});
             $("#legend-btn").css("display","block");
             $("#legend-btn").click(function(d){
                 $(".legend").css("display","block");
                 $("#legend-btn").css("display","none");
-                $("#legend-close-btn").css("display","block");
             });
-            $("#legend-close-btn").click(function(d){
-              $(".legend").css("display","none");
-              $("#legend-btn").css("display","block");
-              $("#legend-close-btn").css("display","none");
-            });
-            mobile = true;
+
+            close_text =  ' <img id="legend-close-btn" style="transform:scale(0.4)" src="data/legend5.svg"></img> ';
         }
         
         else{
-            grades = [0, 10, 20 ,30, 40, 50, 60, 70, 80, 90, 100]
-            legend= L.control({position: 'bottomright'})
+            grades = [0, 10, 20 ,30, 40, 50, 60, 70, 80, 90, 100];
+            legend= L.control({position: 'bottomright'});
             $("#legend-btn").css("display","none");
         }
         
@@ -136,24 +151,31 @@ $( document ).ready(function() {
                       from +  (to ? '&ndash;' + to + ' %' : '')) ;
                 }
             }
-            div.innerHTML = "<h4>% de Aprobación</h4><hr></hr>"+labels.join('<br>');
+            div.innerHTML = '<h4>% de Aprobación'+close_text+'</h4><hr></hr>'+labels.join('<br>');
             return div;
         };
         
         var overlayMaps = {
-              "Barrios": geojsonLayer_barrios,
-              "Distritos": geojsonLayer_distritos
+             "Barrios": geojsonLayer_barrios,
+             "Distritos": geojsonLayer_distritos
         };
-
-        L.control.layers(overlayMaps).addTo(mymap);
+        if(!drawn){
+            L.control.layers(overlayMaps).addTo(mymap);
+            legend.addTo(mymap);
+        }
         
-        legend.addTo(mymap);
 
         if(mobile){
             $(".legend").css("display","none");
-            console.log("OCULTO");
+            $("#legend-close-btn").click(function(d){
+                $(".legend").css("display","none");
+                $("#legend-btn").css("display","block");
+            });
+            $("#mapid").click(function(d){
+                $(".legend").css("display","none");
+                $("#legend-btn").css("display","block");
+            });
         }
-        console.log("KMOVIL",mobile);
         
         function style_barrios(feature) {
             {
@@ -177,6 +199,24 @@ $( document ).ready(function() {
                 };
             }
         }
+        drawn = true;
     };
+    var calculated_height = 400;
+    if(mobile){
+        calculated_hegiht = 3 * ($(window).innerHeight()/4);
+    }
+    $("#mapid").css("height",calculated_height+"px");
+    readData();
 
+    $(window).resize(function(){
+        var calculated_height;
+        if(mobile){
+            calculated_height = 3 * ($(window).innerHeight()/4);
+        }
+        else{
+            calculated_height = 400;
+        }
+        $("#mapid").css("height",calculated_height+"px");
+        readData();
+    })
 });
