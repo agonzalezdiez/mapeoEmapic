@@ -31,13 +31,13 @@
   display: none;
   position: absolute;
   left: 5%;
-  top: 60%;
+  top: 65%;
   z-index: 1000;
 }
 #legend-close-btn{
   display: none;
   position: absolute;
   left: 6%;
-  top: 43%;
+  top: 48%;
   z-index: 1000;
 }
