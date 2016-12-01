@@ -127,7 +127,7 @@ $( document ).ready(function() {
         mymap.fitBounds(bounds);
         var grades;
         var close_text = " ";
-        if(detectMobile){
+        if(detectMobile()){
             grades = [0,30,60,100];
             legend_barrios= L.control({position: 'bottomleft'});
             legend_distritos= L.control({position: 'bottomleft'});
@@ -202,7 +202,7 @@ $( document ).ready(function() {
         $(".legend").remove();
         legend_barrios.addTo(mymap);
         
-        if(detectMobile){
+        if(detectMobile()){
             $(".legend").css("display","none");
             $("#legend-close-btn").click(function(d){
                 $(".legend").css("display","none");
@@ -250,7 +250,7 @@ $( document ).ready(function() {
 
     $(window).resize(function(){
         var calculated_height;
-        if(detectMobile){
+        if(detectMobile()){
             calculated_height = 3 * ($(window).innerHeight()/4);
         }
         else{
