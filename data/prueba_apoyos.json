@@ -353,7 +353,7 @@
         ]
       },
       "properties": {
-        "nombre": "Palacio",
+        "name": "Palacio",
         "codbar": "011",
         "coddistrit": "1",
         "poblacion": 22495,
@@ -608,7 +608,7 @@
         ]
       },
       "properties": {
-        "nombre": "Embajadores",
+        "name": "Embajadores",
         "codbar": "012",
         "coddistrit": "1",
         "poblacion": 44755,
@@ -807,7 +807,7 @@
         ]
       },
       "properties": {
-        "nombre": "Cortes",
+        "name": "Cortes",
         "codbar": "013",
         "coddistrit": "1",
         "poblacion": 10550,
@@ -986,7 +986,7 @@
         ]
       },
       "properties": {
-        "nombre": "Justicia",
+        "name": "Justicia",
         "codbar": "014",
         "coddistrit": "1",
         "poblacion": 16441,
@@ -1201,7 +1201,7 @@
         ]
       },
       "properties": {
-        "nombre": "Universidad",
+        "name": "Universidad",
         "codbar": "015",
         "coddistrit": "1",
         "poblacion": 30699,
@@ -1488,7 +1488,7 @@
         ]
       },
       "properties": {
-        "nombre": "Sol",
+        "name": "Sol",
         "codbar": "016",
         "coddistrit": "1",
         "poblacion": 7367,
@@ -1715,7 +1715,7 @@
         ]
       },
       "properties": {
-        "nombre": "Imperial",
+        "name": "Imperial",
         "codbar": "021",
         "coddistrit": "2",
         "poblacion": 22683,
@@ -1890,7 +1890,7 @@
         ]
       },
       "properties": {
-        "nombre": "Acacias",
+        "name": "Acacias",
         "codbar": "022",
         "coddistrit": "2",
         "poblacion": 36730,
@@ -2005,7 +2005,7 @@
         ]
       },
       "properties": {
-        "nombre": "Chopera",
+        "name": "Chopera",
         "codbar": "023",
         "coddistrit": "2",
         "poblacion": 19822,
@@ -2244,7 +2244,7 @@
         ]
       },
       "properties": {
-        "nombre": "Legazpi",
+        "name": "Legazpi",
         "codbar": "024",
         "coddistrit": "2",
         "poblacion": 18821,
@@ -2439,7 +2439,7 @@
         ]
       },
       "properties": {
-        "nombre": "Delicias",
+        "name": "Delicias",
         "codbar": "025",
         "coddistrit": "2",
         "poblacion": 27260,
@@ -2650,7 +2650,7 @@
         ]
       },
       "properties": {
-        "nombre": "Palos de Moguer",
+        "name": "Palos de Moguer",
         "codbar": "026",
         "coddistrit": "2",
         "poblacion": 25686,
@@ -2957,7 +2957,7 @@
         ]
       },
       "properties": {
-        "nombre": "Atocha",
+        "name": "Atocha",
         "codbar": "027",
         "coddistrit": "2",
         "poblacion": 1112,
@@ -3184,7 +3184,7 @@
         ]
       },
       "properties": {
-        "nombre": "Pacífico",
+        "name": "Pacífico",
         "codbar": "031",
         "coddistrit": "3",
         "poblacion": 33746,
@@ -3359,7 +3359,7 @@
         ]
       },
       "properties": {
-        "nombre": "Adelfas",
+        "name": "Adelfas",
         "codbar": "032",
         "coddistrit": "3",
         "poblacion": 18087,
@@ -3510,7 +3510,7 @@
         ]
       },
       "properties": {
-        "nombre": "Estrella",
+        "name": "Estrella",
         "codbar": "033",
         "coddistrit": "3",
         "poblacion": 23253,
@@ -3629,7 +3629,7 @@
         ]
       },
       "properties": {
-        "nombre": "Ibiza",
+        "name": "Ibiza",
         "codbar": "034",
         "coddistrit": "3",
         "poblacion": 21375,
@@ -3844,7 +3844,7 @@
         ]
       },
       "properties": {
-        "nombre": "Hispanoamérica",
+        "name": "Hispanoamérica",
         "codbar": "054",
         "coddistrit": "5",
         "poblacion": 31272,
@@ -4099,7 +4099,7 @@
         ]
       },
       "properties": {
-        "nombre": "Jerónimos",
+        "name": "Jerónimos",
         "codbar": "035",
         "coddistrit": "3",
         "poblacion": 7077,
@@ -4234,7 +4234,7 @@
         ]
       },
       "properties": {
-        "nombre": "Niño Jesús",
+        "name": "Niño Jesús",
         "codbar": "036",
         "coddistrit": "3",
         "poblacion": 15253,
@@ -4365,7 +4365,7 @@
         ]
       },
       "properties": {
-        "nombre": "Recoletos",
+        "name": "Recoletos",
         "codbar": "041",
         "coddistrit": "4",
         "poblacion": 15536,
@@ -4512,7 +4512,7 @@
         ]
       },
       "properties": {
-        "nombre": "Goya",
+        "name": "Goya",
         "codbar": "042",
         "coddistrit": "4",
         "poblacion": 29383,
@@ -4647,7 +4647,7 @@
         ]
       },
       "properties": {
-        "nombre": "Fuente del Berro",
+        "name": "Fuente del Berro",
         "codbar": "043",
         "coddistrit": "4",
         "poblacion": 20631,
@@ -4910,7 +4910,7 @@
         ]
       },
       "properties": {
-        "nombre": "Guindalera",
+        "name": "Guindalera",
         "codbar": "044",
         "coddistrit": "4",
         "poblacion": 40718,
@@ -5029,7 +5029,7 @@
         ]
       },
       "properties": {
-        "nombre": "Lista",
+        "name": "Lista",
         "codbar": "045",
         "coddistrit": "4",
         "poblacion": 20803,
@@ -5148,7 +5148,7 @@
         ]
       },
       "properties": {
-        "nombre": "Castellana",
+        "name": "Castellana",
         "codbar": "046",
         "coddistrit": "4",
         "poblacion": 17012,
@@ -5267,7 +5267,7 @@
         ]
       },
       "properties": {
-        "nombre": "El Viso",
+        "name": "El Viso",
         "codbar": "051",
         "coddistrit": "5",
         "poblacion": 17128,
@@ -5534,7 +5534,7 @@
         ]
       },
       "properties": {
-        "nombre": "Prosperidad",
+        "name": "Prosperidad",
         "codbar": "052",
         "coddistrit": "5",
         "poblacion": 36144,
@@ -5733,7 +5733,7 @@
         ]
       },
       "properties": {
-        "nombre": "Ciudad Jardín",
+        "name": "Ciudad Jardín",
         "codbar": "053",
         "coddistrit": "5",
         "poblacion": 18323,
@@ -5912,7 +5912,7 @@
         ]
       },
       "properties": {
-        "nombre": "Nueva Espa�a",
+        "name": "Nueva Espa�a",
         "codbar": "055",
         "coddistrit": "5",
         "poblacion": 24017,
@@ -6327,7 +6327,7 @@
         ]
       },
       "properties": {
-        "nombre": "Castilla",
+        "name": "Castilla",
         "codbar": "056",
         "coddistrit": "5",
         "poblacion": 16673,
@@ -6534,7 +6534,7 @@
         ]
       },
       "properties": {
-        "nombre": "Bellas Vistas",
+        "name": "Bellas Vistas",
         "codbar": "061",
         "coddistrit": "6",
         "poblacion": 28350,
@@ -6701,7 +6701,7 @@
         ]
       },
       "properties": {
-        "nombre": "Cuatro Caminos",
+        "name": "Cuatro Caminos",
         "codbar": "062",
         "coddistrit": "6",
         "poblacion": 33930,
@@ -6876,7 +6876,7 @@
         ]
       },
       "properties": {
-        "nombre": "Castillejos",
+        "name": "Castillejos",
         "codbar": "063",
         "coddistrit": "6",
         "poblacion": 19961,
@@ -7279,7 +7279,7 @@
         ]
       },
       "properties": {
-        "nombre": "Almenara",
+        "name": "Almenara",
         "codbar": "064",
         "coddistrit": "6",
         "poblacion": 21933,
@@ -7602,7 +7602,7 @@
         ]
       },
       "properties": {
-        "nombre": "Argüelles",
+        "name": "Argüelles",
         "codbar": "092",
         "coddistrit": "9",
         "poblacion": 24043,
@@ -8125,7 +8125,7 @@
         ]
       },
       "properties": {
-        "nombre": "Valdeacederas",
+        "name": "Valdeacederas",
         "codbar": "065",
         "coddistrit": "6",
         "poblacion": 25138,
@@ -8396,7 +8396,7 @@
         ]
       },
       "properties": {
-        "nombre": "Berruguete",
+        "name": "Berruguete",
         "codbar": "066",
         "coddistrit": "6",
         "poblacion": 24362,
@@ -8531,7 +8531,7 @@
         ]
       },
       "properties": {
-        "nombre": "Gaztambide",
+        "name": "Gaztambide",
         "codbar": "071",
         "coddistrit": "7",
         "poblacion": 22470,
@@ -8670,7 +8670,7 @@
         ]
       },
       "properties": {
-        "nombre": "Arapiles",
+        "name": "Arapiles",
         "codbar": "072",
         "coddistrit": "7",
         "poblacion": 24187,
@@ -8805,7 +8805,7 @@
         ]
       },
       "properties": {
-        "nombre": "Trafalgar",
+        "name": "Trafalgar",
         "codbar": "073",
         "coddistrit": "7",
         "poblacion": 24507,
@@ -8952,7 +8952,7 @@
         ]
       },
       "properties": {
-        "nombre": "Almagro",
+        "name": "Almagro",
         "codbar": "074",
         "coddistrit": "7",
         "poblacion": 19757,
@@ -9067,7 +9067,7 @@
         ]
       },
       "properties": {
-        "nombre": "Rios Rosas",
+        "name": "Rios Rosas",
         "codbar": "075",
         "coddistrit": "7",
         "poblacion": 26855,
@@ -9286,7 +9286,7 @@
         ]
       },
       "properties": {
-        "nombre": "Vallehermoso",
+        "name": "Vallehermoso",
         "codbar": "076",
         "coddistrit": "7",
         "poblacion": 19817,
@@ -21937,7 +21937,7 @@
         ]
       },
       "properties": {
-        "nombre": "El Pardo",
+        "name": "El Pardo",
         "codbar": "081",
         "coddistrit": "8",
         "poblacion": 3420,
@@ -22872,7 +22872,7 @@
         ]
       },
       "properties": {
-        "nombre": "Fuentelareina",
+        "name": "Fuentelareina",
         "codbar": "082",
         "coddistrit": "8",
         "poblacion": 45917,
@@ -23447,7 +23447,7 @@
         ]
       },
       "properties": {
-        "nombre": "Peñagrande",
+        "name": "Peñagrande",
         "codbar": "083",
         "coddistrit": "8",
         "poblacion": 30701,
@@ -23886,7 +23886,7 @@
         ]
       },
       "properties": {
-        "nombre": "Valdezarza",
+        "name": "Valdezarza",
         "codbar": "094",
         "coddistrit": "9",
         "poblacion": 29307,
@@ -24489,7 +24489,7 @@
         ]
       },
       "properties": {
-        "nombre": "Pilar",
+        "name": "Pilar",
         "codbar": "084",
         "coddistrit": "8",
         "poblacion": 44403,
@@ -25256,7 +25256,7 @@
         ]
       },
       "properties": {
-        "nombre": "La Paz",
+        "name": "La Paz",
         "codbar": "085",
         "coddistrit": "8",
         "poblacion": 3181,
@@ -25855,7 +25855,7 @@
         ]
       },
       "properties": {
-        "nombre": "Valdemarín",
+        "name": "Valdemarín",
         "codbar": "095",
         "coddistrit": "9",
         "poblacion": 6425,
@@ -27002,7 +27002,7 @@
         ]
       },
       "properties": {
-        "nombre": "Valverde",
+        "name": "Valverde",
         "codbar": "086",
         "coddistrit": "8",
         "poblacion": 59868,
@@ -27825,7 +27825,7 @@
         ]
       },
       "properties": {
-        "nombre": "Casa de Campo",
+        "name": "Casa de Campo",
         "codbar": "091",
         "coddistrit": "9",
         "poblacion": 12924,
@@ -29588,7 +29588,7 @@
         ]
       },
       "properties": {
-        "nombre": "Mirasierra",
+        "name": "Mirasierra",
         "codbar": "087",
         "coddistrit": "8",
         "poblacion": 33842,
@@ -32915,7 +32915,7 @@
         ]
       },
       "properties": {
-        "nombre": "El Goloso",
+        "name": "El Goloso",
         "codbar": "088",
         "coddistrit": "8",
         "poblacion": 17346,
@@ -34646,7 +34646,7 @@
         ]
       },
       "properties": {
-        "nombre": "Ciudad Universitaria",
+        "name": "Ciudad Universitaria",
         "codbar": "093",
         "coddistrit": "9",
         "poblacion": 16058,
@@ -34901,7 +34901,7 @@
         ]
       },
       "properties": {
-        "nombre": "Portazgo",
+        "name": "Portazgo",
         "codbar": "135",
         "coddistrit": "13",
         "poblacion": 27725,
@@ -35696,7 +35696,7 @@
         ]
       },
       "properties": {
-        "nombre": "El Plantío",
+        "name": "El Plantío",
         "codbar": "096",
         "coddistrit": "9",
         "poblacion": 2711,
@@ -36271,7 +36271,7 @@
         ]
       },
       "properties": {
-        "nombre": "Aravaca",
+        "name": "Aravaca",
         "codbar": "097",
         "coddistrit": "9",
         "poblacion": 25678,
@@ -36746,7 +36746,7 @@
         ]
       },
       "properties": {
-        "nombre": "Cármenes",
+        "name": "Cármenes",
         "codbar": "101",
         "coddistrit": "10",
         "poblacion": 51090,
@@ -37061,7 +37061,7 @@
         ]
       },
       "properties": {
-        "nombre": "Puerta del Ángel",
+        "name": "Puerta del Ángel",
         "codbar": "102",
         "coddistrit": "10",
         "poblacion": 41089,
@@ -37532,7 +37532,7 @@
         ]
       },
       "properties": {
-        "nombre": "Lucero",
+        "name": "Lucero",
         "codbar": "103",
         "coddistrit": "10",
         "poblacion": 35284,
@@ -37859,7 +37859,7 @@
         ]
       },
       "properties": {
-        "nombre": "Aluche",
+        "name": "Aluche",
         "codbar": "104",
         "coddistrit": "10",
         "poblacion": 18877,
@@ -38618,7 +38618,7 @@
         ]
       },
       "properties": {
-        "nombre": "Campamento",
+        "name": "Campamento",
         "codbar": "105",
         "coddistrit": "10",
         "poblacion": 5448,
@@ -38969,7 +38969,7 @@
         ]
       },
       "properties": {
-        "nombre": "Cuatro Vientos",
+        "name": "Cuatro Vientos",
         "codbar": "106",
         "coddistrit": "10",
         "poblacion": 17092,
@@ -39252,7 +39252,7 @@
         ]
       },
       "properties": {
-        "nombre": "Águilas",
+        "name": "Águilas",
         "codbar": "107",
         "coddistrit": "10",
         "poblacion": 65534,
@@ -39539,7 +39539,7 @@
         ]
       },
       "properties": {
-        "nombre": "Comillas",
+        "name": "Comillas",
         "codbar": "111",
         "coddistrit": "11",
         "poblacion": 22188,
@@ -39766,7 +39766,7 @@
         ]
       },
       "properties": {
-        "nombre": "Opañel",
+        "name": "Opañel",
         "codbar": "112",
         "coddistrit": "11",
         "poblacion": 31947,
@@ -40133,7 +40133,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Isidro",
+        "name": "San Isidro",
         "codbar": "113",
         "coddistrit": "11",
         "poblacion": 38055,
@@ -40504,7 +40504,7 @@
         ]
       },
       "properties": {
-        "nombre": "Vista Alegre",
+        "name": "Vista Alegre",
         "codbar": "114",
         "coddistrit": "11",
         "poblacion": 44300,
@@ -40959,7 +40959,7 @@
         ]
       },
       "properties": {
-        "nombre": "Puerta Bonita",
+        "name": "Puerta Bonita",
         "codbar": "115",
         "coddistrit": "11",
         "poblacion": 32926,
@@ -41498,7 +41498,7 @@
         ]
       },
       "properties": {
-        "nombre": "Buenavista",
+        "name": "Buenavista",
         "codbar": "116",
         "coddistrit": "11",
         "poblacion": 45073,
@@ -41749,7 +41749,7 @@
         ]
       },
       "properties": {
-        "nombre": "Abrantes",
+        "name": "Abrantes",
         "codbar": "117",
         "coddistrit": "11",
         "poblacion": 29371,
@@ -41912,7 +41912,7 @@
         ]
       },
       "properties": {
-        "nombre": "Orcasitas",
+        "name": "Orcasitas",
         "codbar": "121",
         "coddistrit": "12",
         "poblacion": 22420,
@@ -42211,7 +42211,7 @@
         ]
       },
       "properties": {
-        "nombre": "Orcasur",
+        "name": "Orcasur",
         "codbar": "122",
         "coddistrit": "12",
         "poblacion": 13355,
@@ -42474,7 +42474,7 @@
         ]
       },
       "properties": {
-        "nombre": "Numancia",
+        "name": "Numancia",
         "codbar": "136",
         "coddistrit": "13",
         "poblacion": 46031,
@@ -43033,7 +43033,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Fermín",
+        "name": "San Fermín",
         "codbar": "123",
         "coddistrit": "12",
         "poblacion": 22919,
@@ -43164,7 +43164,7 @@
         ]
       },
       "properties": {
-        "nombre": "Almendrales",
+        "name": "Almendrales",
         "codbar": "124",
         "coddistrit": "12",
         "poblacion": 20511,
@@ -43391,7 +43391,7 @@
         ]
       },
       "properties": {
-        "nombre": "Moscardó",
+        "name": "Moscardó",
         "codbar": "125",
         "coddistrit": "12",
         "poblacion": 25452,
@@ -43582,7 +43582,7 @@
         ]
       },
       "properties": {
-        "nombre": "Zof�o",
+        "name": "Zof�o",
         "codbar": "126",
         "coddistrit": "12",
         "poblacion": 13354,
@@ -43809,7 +43809,7 @@
         ]
       },
       "properties": {
-        "nombre": "Pradolongo",
+        "name": "Pradolongo",
         "codbar": "127",
         "coddistrit": "12",
         "poblacion": 16881,
@@ -43996,7 +43996,7 @@
         ]
       },
       "properties": {
-        "nombre": "Pavones",
+        "name": "Pavones",
         "codbar": "141",
         "coddistrit": "14",
         "poblacion": 9117,
@@ -44187,7 +44187,7 @@
         ]
       },
       "properties": {
-        "nombre": "Horcajo",
+        "name": "Horcajo",
         "codbar": "142",
         "coddistrit": "14",
         "poblacion": 6465,
@@ -45130,7 +45130,7 @@
         ]
       },
       "properties": {
-        "nombre": "Entrevías",
+        "name": "Entrevías",
         "codbar": "131",
         "coddistrit": "13",
         "poblacion": 33592,
@@ -45409,7 +45409,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Diego",
+        "name": "San Diego",
         "codbar": "132",
         "coddistrit": "13",
         "poblacion": 39282,
@@ -45752,7 +45752,7 @@
         ]
       },
       "properties": {
-        "nombre": "Palomeras Bajas",
+        "name": "Palomeras Bajas",
         "codbar": "133",
         "coddistrit": "13",
         "poblacion": 39310,
@@ -46011,7 +46011,7 @@
         ]
       },
       "properties": {
-        "nombre": "Palomeras Sureste",
+        "name": "Palomeras Sureste",
         "codbar": "134",
         "coddistrit": "13",
         "poblacion": 41988,
@@ -46438,7 +46438,7 @@
         ]
       },
       "properties": {
-        "nombre": "Marroquina",
+        "name": "Marroquina",
         "codbar": "143",
         "coddistrit": "14",
         "poblacion": 27498,
@@ -46765,7 +46765,7 @@
         ]
       },
       "properties": {
-        "nombre": "Media Legua",
+        "name": "Media Legua",
         "codbar": "144",
         "coddistrit": "14",
         "poblacion": 17833,
@@ -47188,7 +47188,7 @@
         ]
       },
       "properties": {
-        "nombre": "Fontarrón",
+        "name": "Fontarrón",
         "codbar": "145",
         "coddistrit": "14",
         "poblacion": 16714,
@@ -47499,7 +47499,7 @@
         ]
       },
       "properties": {
-        "nombre": "Vinateros",
+        "name": "Vinateros",
         "codbar": "146",
         "coddistrit": "14",
         "poblacion": 16848,
@@ -47766,7 +47766,7 @@
         ]
       },
       "properties": {
-        "nombre": "Ventas",
+        "name": "Ventas",
         "codbar": "151",
         "coddistrit": "15",
         "poblacion": 47439,
@@ -48089,7 +48089,7 @@
         ]
       },
       "properties": {
-        "nombre": "Pueblo Nuevo",
+        "name": "Pueblo Nuevo",
         "codbar": "152",
         "coddistrit": "15",
         "poblacion": 60491,
@@ -48300,7 +48300,7 @@
         ]
       },
       "properties": {
-        "nombre": "Quintana",
+        "name": "Quintana",
         "codbar": "153",
         "coddistrit": "15",
         "poblacion": 24236,
@@ -48559,7 +48559,7 @@
         ]
       },
       "properties": {
-        "nombre": "Concepción",
+        "name": "Concepción",
         "codbar": "154",
         "coddistrit": "15",
         "poblacion": 20511,
@@ -48746,7 +48746,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Pascual",
+        "name": "San Pascual",
         "codbar": "155",
         "coddistrit": "15",
         "poblacion": 18228,
@@ -48881,7 +48881,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Juan Bautista",
+        "name": "San Juan Bautista",
         "codbar": "156",
         "coddistrit": "15",
         "poblacion": 12369,
@@ -49004,7 +49004,7 @@
         ]
       },
       "properties": {
-        "nombre": "Colina",
+        "name": "Colina",
         "codbar": "157",
         "coddistrit": "15",
         "poblacion": 6162,
@@ -49087,7 +49087,7 @@
         ]
       },
       "properties": {
-        "nombre": "Atalaya",
+        "name": "Atalaya",
         "codbar": "158",
         "coddistrit": "15",
         "poblacion": 1542,
@@ -49346,7 +49346,7 @@
         ]
       },
       "properties": {
-        "nombre": "Costillares",
+        "name": "Costillares",
         "codbar": "159",
         "coddistrit": "15",
         "poblacion": 21984,
@@ -49565,7 +49565,7 @@
         ]
       },
       "properties": {
-        "nombre": "Palomas",
+        "name": "Palomas",
         "codbar": "161",
         "coddistrit": "16",
         "poblacion": 6690,
@@ -49948,7 +49948,7 @@
         ]
       },
       "properties": {
-        "nombre": "Piovera",
+        "name": "Piovera",
         "codbar": "162",
         "coddistrit": "16",
         "poblacion": 14506,
@@ -50303,7 +50303,7 @@
         ]
       },
       "properties": {
-        "nombre": "Canillas",
+        "name": "Canillas",
         "codbar": "163",
         "coddistrit": "16",
         "poblacion": 40559,
@@ -50714,7 +50714,7 @@
         ]
       },
       "properties": {
-        "nombre": "Pinar del Rey",
+        "name": "Pinar del Rey",
         "codbar": "164",
         "coddistrit": "16",
         "poblacion": 52062,
@@ -50921,7 +50921,7 @@
         ]
       },
       "properties": {
-        "nombre": "Apóstol Santiago",
+        "name": "Apóstol Santiago",
         "codbar": "165",
         "coddistrit": "16",
         "poblacion": 15236,
@@ -51204,7 +51204,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Andrés",
+        "name": "San Andrés",
         "codbar": "171",
         "coddistrit": "17",
         "poblacion": 43421,
@@ -51415,7 +51415,7 @@
         ]
       },
       "properties": {
-        "nombre": "San Cristóbal",
+        "name": "San Cristóbal",
         "codbar": "172",
         "coddistrit": "17",
         "poblacion": 15121,
@@ -53398,7 +53398,7 @@
         ]
       },
       "properties": {
-        "nombre": "Valdefuentes",
+        "name": "Valdefuentes",
         "codbar": "166",
         "coddistrit": "16",
         "poblacion": 51307,
@@ -55089,7 +55089,7 @@
         ]
       },
       "properties": {
-        "nombre": "Butarque",
+        "name": "Butarque",
         "codbar": "173",
         "coddistrit": "17",
         "poblacion": 17209,
@@ -55408,7 +55408,7 @@
         ]
       },
       "properties": {
-        "nombre": "Los Rosales",
+        "name": "Los Rosales",
         "codbar": "174",
         "coddistrit": "17",
         "poblacion": 36532,
@@ -55715,7 +55715,7 @@
         ]
       },
       "properties": {
-        "nombre": "Los Ángeles",
+        "name": "Los Ángeles",
         "codbar": "175",
         "coddistrit": "17",
         "poblacion": 30378,
@@ -58110,7 +58110,7 @@
         ]
       },
       "properties": {
-        "nombre": "Casco Histórico de Vallecas",
+        "name": "Casco Histórico de Vallecas",
         "codbar": "181",
         "coddistrit": "18",
         "poblacion": 79398,
@@ -58525,7 +58525,7 @@
         ]
       },
       "properties": {
-        "nombre": "Santa Eugenia",
+        "name": "Santa Eugenia",
         "codbar": "182",
         "coddistrit": "18",
         "poblacion": 24278,
@@ -62492,7 +62492,7 @@
         ]
       },
       "properties": {
-        "nombre": "Casco Histórico de Vicálvaro",
+        "name": "Casco Histórico de Vicálvaro",
         "codbar": "191",
         "coddistrit": "19",
         "poblacion": 51268,
@@ -62783,7 +62783,7 @@
         ]
       },
       "properties": {
-        "nombre": "Ambroz",
+        "name": "Ambroz",
         "codbar": "192",
         "coddistrit": "19",
         "poblacion": 18596,
@@ -63034,7 +63034,7 @@
         ]
       },
       "properties": {
-        "nombre": "Simancas",
+        "name": "Simancas",
         "codbar": "201",
         "coddistrit": "20",
         "poblacion": 26415,
@@ -63249,7 +63249,7 @@
         ]
       },
       "properties": {
-        "nombre": "Hellín",
+        "name": "Hellín",
         "codbar": "202",
         "coddistrit": "20",
         "poblacion": 11400,
@@ -63396,7 +63396,7 @@
         ]
       },
       "properties": {
-        "nombre": "Amposta",
+        "name": "Amposta",
         "codbar": "203",
         "coddistrit": "20",
         "poblacion": 8226,
@@ -63667,7 +63667,7 @@
         ]
       },
       "properties": {
-        "nombre": "Arcos",
+        "name": "Arcos",
         "codbar": "204",
         "coddistrit": "20",
         "poblacion": 23771,
@@ -64322,7 +64322,7 @@
         ]
       },
       "properties": {
-        "nombre": "Rosas",
+        "name": "Rosas",
         "codbar": "205",
         "coddistrit": "20",
         "poblacion": 15745,
@@ -64961,7 +64961,7 @@
         ]
       },
       "properties": {
-        "nombre": "Rejas",
+        "name": "Rejas",
         "codbar": "206",
         "coddistrit": "20",
         "poblacion": 8852,
@@ -65160,7 +65160,7 @@
         ]
       },
       "properties": {
-        "nombre": "Canillejas",
+        "name": "Canillejas",
         "codbar": "207",
         "coddistrit": "20",
         "poblacion": 28523,
@@ -65427,7 +65427,7 @@
         ]
       },
       "properties": {
-        "nombre": "Salvador",
+        "name": "Salvador",
         "codbar": "208",
         "coddistrit": "20",
         "poblacion": 31602,
@@ -65634,7 +65634,7 @@
         ]
       },
       "properties": {
-        "nombre": "Alameda de Osuna",
+        "name": "Alameda de Osuna",
         "codbar": "211",
         "coddistrit": "21",
         "poblacion": 19490,
@@ -67297,7 +67297,7 @@
         ]
       },
       "properties": {
-        "nombre": "Aeropuerto",
+        "name": "Aeropuerto",
         "codbar": "212",
         "coddistrit": "21",
         "poblacion": 1762,
@@ -67596,7 +67596,7 @@
         ]
       },
       "properties": {
-        "nombre": "Casco Histórico de Barajas",
+        "name": "Casco Histórico de Barajas",
         "codbar": "213",
         "coddistrit": "21",
         "poblacion": 7321,
@@ -68967,7 +68967,7 @@
         ]
       },
       "properties": {
-        "nombre": "Timón",
+        "name": "Timón",
         "codbar": "214",
         "coddistrit": "21",
         "poblacion": 10960,
@@ -69358,7 +69358,7 @@
         ]
       },
       "properties": {
-        "nombre": "Corralejos",
+        "name": "Corralejos",
         "codbar": "215",
         "coddistrit": "21",
         "poblacion": 7388,

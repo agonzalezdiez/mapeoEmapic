@@ -107,12 +107,12 @@ $( document ).ready(function() {
         
         if(!drawn){
         geojsonLayer_barrios.addTo(mymap).bindPopup(function(d){ 
-            return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.nombre + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
+            return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.name + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
         });}
         else{
         geojsonLayer_barrios.bindPopup(function(d){ 
         //geojsonLayer_barrios.bindPopup(function(d){ 
-            return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.nombre + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
+            return  '<h2 style="margin-bottom: 0px;margin-top: 0px;">' +  d.feature.properties.name + '</h2>'  + '<hr></hr>' + '<h3> Apoyos: ' + formatNumber(d.feature.properties.apoyos) + '</h3>' + '<h3> Población: ' +formatNumber(d.feature.properties.poblacion) + '</h3> <hr>' + '</hr> <h3> Aprobación (*): ' + formatNumber(d.feature.properties.valor)+ ' %' + '</h3>';
         });
         }
 
@@ -167,7 +167,6 @@ $( document ).ready(function() {
         legend_distritos.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legend'),
             labels = [],
-            grades = [10,20,30,70],
             from, to;
             for (var i = 0; i < grades.length; i++) {
                 from = grades[i];
