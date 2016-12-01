@@ -1,31 +1,30 @@
 $( document ).ready(function() {
 
-    var mobile = false;
     var mymap;
     var legend_barrios;
     var legend_distritos;
     var legend;
     var drawn = false;
 
-    function readData(){
-
+    function detectMobile(){
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            mobile = true;
+            return true;
         }
         else{
-           mobile = false;
+           return false;
         }
+    }
+
+    function readData(){
 
         d3.queue()
             .defer(d3.json,"data/prueba_apoyos.json")
             .defer(d3.json,"data/madridDistritos.json")
             .await(ready);
-            
     }
 
     function ready(error,data,data2){
 
-        console.log("DATA",data,error,data2);
         if(!mymap){
             mymap = L.map('mapid');
         }
@@ -125,11 +124,10 @@ $( document ).ready(function() {
         });
 
         var bounds = geojsonLayer_distritos.getBounds();
-        console.log(bounds);
         mymap.fitBounds(bounds);
         var grades;
         var close_text = " ";
-        if(mobile){
+        if(detectMobile){
             grades = [0,30,60,100];
             legend_barrios= L.control({position: 'bottomleft'});
             legend_distritos= L.control({position: 'bottomleft'});
@@ -192,7 +190,6 @@ $( document ).ready(function() {
             L.control.layers(overlayMaps).addTo(mymap);
         }
         mymap.on('layeradd', function (eventLayer) {
-            console.log("LAYER",eventLayer);
             if(mymap.hasLayer(geojsonLayer_distritos)){
                 legend = legend_distritos;
             }
@@ -205,7 +202,7 @@ $( document ).ready(function() {
         $(".legend").remove();
         legend_barrios.addTo(mymap);
         
-        if(mobile){
+        if(detectMobile){
             $(".legend").css("display","none");
             $("#legend-close-btn").click(function(d){
                 $(".legend").css("display","none");
@@ -242,16 +239,18 @@ $( document ).ready(function() {
         drawn = true;
     };
     var calculated_height = 400;
-    if(mobile){
-        calculated_hegiht = 3 * ($(window).innerHeight()/4);
+    if(detectMobile()){
+        calculated_height = 3 * ($(window).innerHeight()/4);
+    }
+    else{
+        calculated_height = 400;
     }
     $("#mapid").css("height",calculated_height+"px");
     readData();
 
     $(window).resize(function(){
         var calculated_height;
-        console.log("remove",$(".legend")[0]);
-        if(mobile){
+        if(detectMobile){
             calculated_height = 3 * ($(window).innerHeight()/4);
         }
         else{
