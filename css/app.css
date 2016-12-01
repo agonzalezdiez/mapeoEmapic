@@ -42,10 +42,6 @@
   border: none;
   text-align: center;
 }
-/*#legend-close-btn{
-  display: none;
-  position: absolute;
-  left: 6%;
-  top: 48%;
-  z-index: 1000;
-}*/
+.legend{
+  line-height: 22px;
+}

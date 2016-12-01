@@ -2,6 +2,8 @@ $( document ).ready(function() {
 
     var mobile = false;
     var mymap;
+    var legend_barrios;
+    var legend_distritos;
     var legend;
     var drawn = false;
 
@@ -18,6 +20,7 @@ $( document ).ready(function() {
             .defer(d3.json,"data/prueba_apoyos.json")
             .defer(d3.json,"data/madridDistritos.json")
             .await(ready);
+            
     }
 
     function ready(error,data,data2){
@@ -128,7 +131,8 @@ $( document ).ready(function() {
         var close_text = " ";
         if(mobile){
             grades = [0,30,60,100];
-            legend= L.control({position: 'bottomleft'});
+            legend_barrios= L.control({position: 'bottomleft'});
+            legend_distritos= L.control({position: 'bottomleft'});
             $("#legend-btn").css("display","block");
             $("#legend-btn").click(function(d){
                 $(".legend").css("display","block");
@@ -140,11 +144,12 @@ $( document ).ready(function() {
         
         else{
             grades = [0, 10, 20 ,30, 40, 50, 60, 70, 80, 90, 100];
-            legend= L.control({position: 'bottomright'});
+            legend_barrios = L.control({position: 'bottomright'});
+            legend_distritos = L.control({position: 'bottomright'});
             $("#legend-btn").css("display","none");
         }
         
-        legend.onAdd = function (map) {
+        legend_barrios.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legend'),
             labels = [],
             from, to;
@@ -160,6 +165,24 @@ $( document ).ready(function() {
             div.innerHTML = '<h4>% de Aprobación'+close_text+'</h4><hr></hr>'+labels.join('<br>');
             return div;
         };
+
+        legend_distritos.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info legend'),
+            labels = [],
+            grades = [10,20,30,70],
+            from, to;
+            for (var i = 0; i < grades.length; i++) {
+                from = grades[i];
+                to = grades[i + 1];
+                if(to){
+                    labels.push(
+                      '<i style="background:' + colorScale_distritos(from) + ' ">  </i>' +
+                      from +  (to ? '&ndash;' + to + ' %' : '')) ;
+                }
+            }
+            div.innerHTML = '<h4>% de Aprobación'+close_text+'</h4><hr></hr>'+labels.join('<br>');
+            return div;
+        };
         
         var overlayMaps = {
              "Barrios": geojsonLayer_barrios,
@@ -167,10 +190,21 @@ $( document ).ready(function() {
         };
         if(!drawn){
             L.control.layers(overlayMaps).addTo(mymap);
-            legend.addTo(mymap);
         }
+        mymap.on('layeradd', function (eventLayer) {
+            console.log("LAYER",eventLayer);
+            if(mymap.hasLayer(geojsonLayer_distritos)){
+                legend = legend_distritos;
+            }
+            if(mymap.hasLayer(geojsonLayer_barrios)){
+                legend = legend_barrios;
+            }
+            $(".legend").remove();
+            legend.addTo(mymap);
+        });
+        $(".legend").remove();
+        legend_barrios.addTo(mymap);
         
-
         if(mobile){
             $(".legend").css("display","none");
             $("#legend-close-btn").click(function(d){
@@ -216,6 +250,7 @@ $( document ).ready(function() {
 
     $(window).resize(function(){
         var calculated_height;
+        console.log("remove",$(".legend")[0]);
         if(mobile){
             calculated_height = 3 * ($(window).innerHeight()/4);
         }
